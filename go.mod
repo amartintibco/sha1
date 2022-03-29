@@ -1,4 +1,4 @@
-module github.com/amartintibco/sha1Encrypt
+module github.com/amartintibco/sha1
 
 go 1.16
 

@@ -1,9 +1,9 @@
 {
-  "name": "sha1-hashes",
+  "name": "sha1",
   "type": "flogo:activity",
-  "ref": "github.com/amartintibco/sha1Encrypt",
+  "ref": "github.com/amartintibco/sha1",
   "version": "0.0.1",
-  "title": "sha1-hash",
+  "title": "sha1",
   "description": "Encrypt with sha1",
   "inputs":[
     {
