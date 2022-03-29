@@ -34,7 +34,7 @@ func (a *Sha1) Metadata() *activity.Metadata {
 
 // Eval implements activity.Activity.Eval
 func (a *Sha1) Eval(context activity.Context) (done bool, err error) {
-	text := context.GetInput(ivInput).(string)
+	text := "Test"
 
 	h := sha1.New()
 
