@@ -38,7 +38,7 @@ func (a *Sha1) Eval(context activity.Context) (done bool, err error) {
 
 	h := sha1.New()
 
-	context.SetOutput(ovResult, h.Write([]byte(text)))
+	context.SetOutput(ovResult, h.Sum([]byte(text)))
 
 	return true, nil
 }
