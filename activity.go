@@ -2,7 +2,6 @@ package sha1
 
 import (
 	"crypto/sha1"
-	"fmt"
 
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
@@ -42,17 +41,4 @@ func (a *Sha1) Eval(context activity.Context) (done bool, err error) {
 	context.SetOutput(ovResult, h.Write([]byte(text)))
 
 	return true, nil
-}
-
-func main() {
-	s := "sha1 this string"
-
-	h := sha1.New()
-
-	h.Write([]byte(s))
-
-	bs := h.Sum(nil)
-
-	fmt.Println(s)
-	fmt.Printf("%x\n", bs)
 }
