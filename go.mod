@@ -1,3 +1,5 @@
+module github.com/amartintibco/sha1Encrypt
+
 go 1.16
 
 require (
