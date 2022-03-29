@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	ivInput  = "text"
+	ivInput  = "textToEncrypt"
 	ovResult = "result"
 )
 
@@ -34,11 +34,11 @@ func (a *Sha1) Metadata() *activity.Metadata {
 
 // Eval implements activity.Activity.Eval
 func (a *Sha1) Eval(context activity.Context) (done bool, err error) {
-	text := "Test"
+	textToEncrypt := context.GetInput(ivInput).(string)
 
 	h := sha1.New()
 
-	context.SetOutput(ovResult, h.Sum([]byte(text)))
+	context.SetOutput(ovResult, h.Sum([]byte(textToEncrypt)))
 
 	return true, nil
 }
