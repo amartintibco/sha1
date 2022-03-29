@@ -1,0 +1,20 @@
+{
+  "name": "sha1-hashes",
+  "type": "flogo:activity",
+  "version": "0.0.1",
+  "title": "sha1-hash",
+  "description": "Encrypt with sha1",
+  "inputs":[
+    {
+      "name": "textToEncrypt",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "sha1Encrypted",
+      "type": "string"
+    }
+  ]
+}
